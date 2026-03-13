@@ -28,28 +28,37 @@ Using KSP for efficient annotation processing and Hilt for Dependency Injection.
 
 
 plugins {
+
     id("com.google.dagger.hilt.android") version "2.59.2" apply false
     id("com.google.devtools.ksp") version "2.2.10-2.0.2" apply false
+    
 }
 
 3. Gradle Setup (App Level)
 Comprehensive dependency list including Paging 3, Room, Retrofit, and Hilt.
 
 // File: app/build.gradle.kts
+
 plugins {
+
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("com.google.devtools.ksp")
     id("com.google.dagger.hilt.android")
+    
 }
 
 android {
+
     compileSdk = 36
     // ... other configs
+    
 }
 
 dependencies {
+
     // 📄 Pagination (Paging 3)
+    
     implementation("androidx.paging:paging-runtime:3.4.2")
     implementation("androidx.paging:paging-compose:3.4.2")
 
@@ -72,6 +81,7 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.10.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2")
+    
 }
 
 
