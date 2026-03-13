@@ -25,6 +25,8 @@ Permissions: Requires Internet access for Retrofit API calls.
 Using KSP for efficient annotation processing and Hilt for Dependency Injection.
 
 // File: build.gradle.kts (Project Level)
+
+
 plugins {
     id("com.google.dagger.hilt.android") version "2.59.2" apply false
     id("com.google.devtools.ksp") version "2.2.10-2.0.2" apply false
